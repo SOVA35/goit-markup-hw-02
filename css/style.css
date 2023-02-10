@@ -1,6 +1,52 @@
-body {
+:root {
+  --primery-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --accent-color-hover: #404bbf;
+  --primary-bg-color: #ffffff;
+  --secodary-text-color: #ffffff;
 }
 
-.list {
-  list-style: none;
+/*main text color:#434455*/
+/*accent color: #4D5AE5*/
+
+body {
+  color: var(--primery-text-color);
+  background-color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/*hero block*/
+.hero {
+  color: teal;
+}
+.button {
+  color: var(--secodary-text-color);
+  background-color: var(--accent-color);
+}
+
+/*block nav*/
+
+.navbar-list .link {
+  color: var(--title-text-color);
+}
+
+.navbar-list :hover,
+.navbar-list :focus {
+  color: #404bbf;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+}
+
+/* address block*/
+
+.contact-tel {
+  color: var(--primery-text-color);
+}
+.contact-mail {
+  color: var(--primery-text-color);
 }

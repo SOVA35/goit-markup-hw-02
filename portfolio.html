@@ -5,85 +5,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto+Condensed&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <!--контакти-->
+      <!--contacts-->
 
       <nav>
-        <a href="./index.html"> <span>Web</span>Studio </a>
-        <ul>
-          <li><a href="./studio.html">Studio</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+        <a href="./index.html"> <span class="logo">Web</span>Studio</a>
+        <ul class="navbar-list">
+          <li><a href="./studio.html" class="link">Studio</a></li>
+          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="" class="link">Contacts</a></li>
         </ul>
       </nav>
+
+      <!--addres-->
       <address>
         <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="contacts">
+            <a href="mailto:info@devstudio.com" class="contact-mail"
+              >info@devstudio.com</a
+            >
+          </li>
 
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li class="contacts">
+            <a href="tel:+110001111111" class="contact-tel"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
         </ul>
       </address>
     </header>
-    <ul>
-        <li> 
-            <button type="button">All</button>
-           
-        <li>
-             <button type="button">Web Site</button>
-            
-        <li>  
-             <button type="button">App</button>
-        <li>   
-            <button type="button">Design</button>
-        <li> 
-              <button type="button">Marketing</button>
-    </ul>
-    <ul>
-        <li>
-             <img src="/images/portfolio/bankapp.jpg" width="360" alt="example mobile banking app"/>
-            <h2>Banking App Interface Concept</h2>
-            <p>App</p>
-        </li>
-        <li> <img src="/images/portfolio/nfc.jpg" width="360" alt="example cashless payment"/>
-            <h2>Cashless Payment</h2>
-            <p>Marketing</p>
-        </li>
-        <li> <img src="/images/portfolio/maditationapp.jpg" width="360" alt="example maditation app on lap top"/>
-            <h2>Meditaion App</h2>
-            <p>App</p>
-        </li>
-        <li> <img src="/images/portfolio/taxiapp.jpg" width="360" alt="driver watching mobile taxi app"/>
-            <h2>Taxi Service</h2>
-            <p>Marketing</p>
-        </li>
-        <li> <img src="/images/portfolio/screen.jpg" width="360" alt="mobile phone screen with 4 kinds of pictures"/>
-            <h2>Screen Illustrations</h2>
-            <p>Design</p>
-        <li> <img src="/images/portfolio/courses.jpg" width="360" alt="red hair girl watching phone and smile"/>
-            <h2>Online Courses</h2>
-            <p>Marketing</p>
-        </li>
-        <li> <img src="/images/portfolio/instagram.jpg" width="360" alt="collage different instagram pages style"/>
-            <h2>Instagram Stories Concepth2>
-            <p>Design</p>
-        </li>
-        <li> <img src="/images/portfolio/food.jpg" width="360" alt="a woman carries fresh vegetables"/>
-            <h2>Organic Food</h2>
-            <p>Web Site</p>
-        </li>
-        <li> <img src="/images/portfolio/cofeee.jpg" width="360" alt="barista pours coffee into a cup"/>
-            <h2>Fresh Coffee</h2>
-            <p>Web Site</p>
-        </li>
-    </ul>
 
-    <!--Підвал-->
+    <!--filter battons-->
+    <section class="buttons">
+      <ul class="buttons-list">
+        <li class="type">
+          <button type="button">All</button>
+        </li>
+
+        <li class="type">
+          <button type="button">Web Site</button>
+        </li>
+
+        <li class="type">
+          <button type="button">App</button>
+        </li>
+
+        <li class="type">
+          <button type="button">Design</button>
+        </li>
+
+        <li class="type">
+          <button type="button">Marketing</button>
+        </li>
+      </ul>
+    </section>
+
+    <!--exapmles of work-->
+    <section>
+      <ul>
+        <li>
+          <img
+            src="./images/portfolio/bankapp.jpg"
+            width="360"
+            alt="example mobile banking app"
+          />
+          <h2>Banking App Interface Concept</h2>
+          <p>App</p>
+        </li>
+        <li>
+          <img
+            src="./images/portfolio/nfc.jpg"
+            width="360"
+            alt="example cashless payment"
+          />
+          <h2>Cashless Payment</h2>
+          <p>Marketing</p>
+        </li>
+        <li>
+          <img
+            src="./images/portfolio/maditationapp.jpg"
+            width="360"
+            alt="example maditation app on lap top"
+          />
+          <h2>Meditaion App</h2>
+          <p>App</p>
+        </li>
+        <li>
+          <img
+            src="./images/portfolio/taxiapp.jpg"
+            width="360"
+            alt="driver watching mobile taxi app"
+          />
+          <h2>Taxi Service</h2>
+          <p>Marketing</p>
+        </li>
+        <li>
+          <img
+            src="./images/portfolio/screen.jpg"
+            width="360"
+            alt="mobile phone screen with 4 kinds of pictures"
+          />
+          <h2>Screen Illustrations</h2>
+          <p>Design</p>
+        </li>
+
+        <li>
+          <img
+            src="./images/portfolio/courses.jpg"
+            width="360"
+            alt="red hair girl watching phone and smile"
+          />
+          <h2>Online Courses</h2>
+          <p>Marketing</p>
+        </li>
+        <li>
+          <img
+            src="/images/portfolio/instagram.jpg"
+            width="360"
+            alt="collage different instagram pages style"
+          />
+          <h2>Instagram Stories Concept</h2>
+          <p>Design</p>
+        </li>
+        <li>
+          <img
+            src="./images/portfolio/food.jpg"
+            width="360"
+            alt="a woman carries fresh vegetables"
+          />
+          <h2>Organic Food</h2>
+          <p>Web Site</p>
+        </li>
+        <li>
+          <img
+            src="./images/portfolio/cofeee.jpg"
+            width="360"
+            alt="barista pours coffee into a cup"
+          />
+          <h2>Fresh Coffee</h2>
+          <p>Web Site</p>
+        </li>
+      </ul>
+    </section>
+
+    <!--footer-->
 
     <footer>
-      <a href="./index.html"> WebStudio </a>
+      <a href="./index.html"> <span class="logo">Web</span>Studio</a>
       <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
