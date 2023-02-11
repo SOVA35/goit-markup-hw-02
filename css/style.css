@@ -72,7 +72,9 @@ body {
 .logo-part {
   color: var(--accent-color);
 }
-
+.logo-second {
+  color: var(--secodary-text-color);
+}
 /* address block*/
 
 .contact-mail {
@@ -99,8 +101,8 @@ body {
 
 /*footer*/
 .footer {
+  color: var(--secodary-text-color);
   background-color: #2E2F42;
   width: 1440px;
   height: 600px;
 }
-
