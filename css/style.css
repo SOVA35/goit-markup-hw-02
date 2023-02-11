@@ -12,41 +12,95 @@
 
 body {
   color: var(--primery-text-color);
-  background-color: #ffffff;
-  font-family: Roboto;
+ 
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+ 
 }
 /*hero block*/
 .hero {
-  color: teal;
+  color: var(--secodary-text-color); 
+  background-color: #2E2F42;
+  width: 1440px;
+  height: 600px;
+  
 }
+.hero-title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 56px; 
+  
+}
+
+
+
 .button {
   color: var(--secodary-text-color);
+  background-color: var(--accent-color);
+  
+ 
+}
+
+.button:hover {
   background-color: var(--accent-color);
 }
 
 /*block nav*/
 
 .navbar-list .link {
+  font-weight: 500;
+  text-decoration: none;
   color: var(--title-text-color);
+
 }
 
 .navbar-list :hover,
 .navbar-list :focus {
-  color: #404bbf;
+  color: var(--accent-color-hover);
+  
 }
+/*logo*/
 
 .logo {
-  color: var(--accent-color);
+  color: var(--title-text-color);
   font-family: Raleway;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.logo-part {
+  color: var(--accent-color);
 }
 
 /* address block*/
 
-.contact-tel {
-  color: var(--primery-text-color);
-}
 .contact-mail {
+  text-decoration: none;
   color: var(--primery-text-color);
+  font-weight: 400;
+  font-style: normal;
 }
+.contact-mail:hover {
+  color: var(--accent-color-hover);
+}
+
+.contact-tel {
+  text-decoration: none;
+  color: var(--primery-text-color);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-tel:hover {
+  color: var(--accent-color-hover);
+}
+
+
+/*footer*/
+.footer {
+  background-color: #2E2F42;
+  width: 1440px;
+  height: 600px;
+}
+
