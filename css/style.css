@@ -141,6 +141,9 @@ body {
 
 /*team*/
 .team {
+  background-color: var(--main-bcg-color);
+
+  width: 1440px;
 }
 .team-title {
   color: var(--title-text-color);
@@ -149,6 +152,10 @@ body {
   letter-spacing: 2px;
   text-align: center;
   width: 1440px;
+}
+
+.team-image {
+  background-color: var(--primary-bg-color);
 }
 
 /*footer*/
