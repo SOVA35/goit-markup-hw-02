@@ -5,45 +5,60 @@
   --accent-color-hover: #404bbf;
   --primary-bg-color: #ffffff;
   --secodary-text-color: #ffffff;
+  --main-bcg-color: #f4f4fd;
 }
 
 /*main text color:#434455*/
 /*accent color: #4D5AE5*/
 
+.list {
+  list-style: none;
+}
 body {
   color: var(--primery-text-color);
- 
   font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
- 
 }
+
 /*hero block*/
 .hero {
-  color: var(--secodary-text-color); 
-  background-color: #2E2F42;
+  color: var(--secodary-text-color);
+  background-color: #2e2f42;
   width: 1440px;
   height: 600px;
-  
+  margin-top: ;
 }
 .hero-title {
   font-weight: 700;
   text-align: center;
-  font-size: 56px; 
-  
+  font-size: 56px;
+  padding-top: 188px;
+  padding-bottom: 48px;
+  padding-left: 472px;
+  padding-right: 472px;
+  margin: 0 auto;
+  display: block;
+  letter-spacing: 0.02em;
 }
-
-
 
 .button {
   color: var(--secodary-text-color);
   background-color: var(--accent-color);
-  
- 
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 48px;
+  margin: 0 auto;
+  display: block;
 }
 
 .button:hover {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color-hover);
 }
 
 /*block nav*/
@@ -52,13 +67,11 @@ body {
   font-weight: 500;
   text-decoration: none;
   color: var(--title-text-color);
-
 }
 
 .navbar-list :hover,
 .navbar-list :focus {
   color: var(--accent-color-hover);
-  
 }
 /*logo*/
 
@@ -98,11 +111,51 @@ body {
   color: var(--accent-color-hover);
 }
 
+/*features*/
+
+.list {
+  color: var(--primery-text-color);
+  font-weight: 400;
+  font-size: 16px;
+}
+.features-title {
+  color: var(--title-text-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.features-text {
+  width: 264px;
+}
+
+/*competence*/
+
+.work-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 1440px;
+  letter-spacing: 0.02em;
+}
+
+/*team*/
+.team {
+}
+.team-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 1440px;
+}
 
 /*footer*/
 .footer {
   color: var(--secodary-text-color);
-  background-color: #2E2F42;
+  background-color: #2e2f42;
+  margin-top: ;
   width: 1440px;
-  height: 600px;
+  height: 310px;
 }
