@@ -6,6 +6,8 @@
   --primary-bg-color: #ffffff;
   --secodary-text-color: #ffffff;
   --main-bcg-color: #f4f4fd;
+  --button-main-color: #f4f4fd;
+  --button-border-color: #e7e9fc;
 }
 
 /*main text color:#434455*/
@@ -165,4 +167,97 @@ body {
   margin-top: ;
   width: 1440px;
   height: 310px;
+}
+
+/*<page portfolio>*/
+
+/*buttons*/
+.buttons-list > .type {
+  list-style: none;
+}
+/* portfolio*/
+.type > .all {
+  border-color: var(--button-border-color);
+  background-color: var(--button-main-color);
+  color: var(--accent-color);
+  border-radius: 4px;
+  border-width: 1px;
+  width: 69px;
+  height: 48px;
+}
+.type > .all:hover {
+  border-color: var(--button-border-color);
+  background-color: var(--accent-color-hover);
+  color: var(--secodary-text-color);
+  border-radius: 4px;
+  border-width: 1px;
+  color: rgba(0, 0, 0, 0.08);
+}
+
+.type > .website {
+  border-color: var(--button-border-color);
+  background-color: var(--button-main-color);
+  color: var(--accent-color);
+  border-radius: 4px;
+  border-width: 1px;
+  width: 116px;
+  height: 48px;
+}
+.type > .website:hover {
+  border-color: var(--button-border-color);
+  background-color: var(--accent-color-hover);
+  color: var(--secodary-text-color);
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+.type > .app {
+  border-color: var(--button-border-color);
+  background-color: var(--button-main-color);
+  color: var(--accent-color);
+  border-radius: 4px;
+  border-width: 1px;
+  width: 78px;
+  height: 48px;
+}
+.type > .app:hover {
+  border-color: var(--button-border-color);
+  background-color: var(--accent-color-hover);
+  color: var(--secodary-text-color);
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+.type > .design {
+  border-color: var(--button-border-color);
+  background-color: var(--button-main-color);
+  color: var(--accent-color);
+  border-radius: 4px;
+  border-width: 1px;
+  width: 101px;
+  height: 48px;
+}
+.type > .design:hover {
+  border-color: var(--button-border-color);
+  background-color: var(--accent-color-hover);
+  color: var(--secodary-text-color);
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+.type > .marketting {
+  border-color: var(--button-border-color);
+  background-color: var(--button-main-color);
+  color: var(--accent-color);
+  border-radius: 4px;
+  border-width: 1px;
+  width: 126px;
+  height: 48px;
+}
+.type > .marketting:hover {
+  border-color: var(--button-border-color);
+  background-color: var(--accent-color-hover);
+  color: var(--secodary-text-color);
+  border-radius: 4px;
+  border-width: 1px;
 }
