@@ -21,6 +21,8 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  width: 1440px;
+  display: inline;
 }
 
 /*hero block*/
@@ -29,34 +31,29 @@ body {
   background-color: #2e2f42;
   width: 1440px;
   height: 600px;
-  margin-top: ;
 }
 .hero-title {
   font-weight: 700;
   text-align: center;
   font-size: 56px;
-  padding-top: 188px;
-  padding-bottom: 48px;
-  padding-left: 472px;
-  padding-right: 472px;
+ 
   margin: 0 auto;
-  display: block;
   letter-spacing: 0.02em;
 }
 
 .button {
   color: var(--secodary-text-color);
   background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
   border-radius: 4px;
   width: 169px;
   height: 56px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-top: 48px;
-  margin: 0 auto;
+
+  
   display: block;
+  border: none;
 }
 
 .button:hover {
@@ -64,17 +61,23 @@ body {
 }
 
 /*block nav*/
+.nav  {
+  display: inline-block;
+}
 
-.navbar-list .link {
+.nav .link {
   font-weight: 500;
   text-decoration: none;
   color: var(--title-text-color);
+  
+  
 }
 
-.navbar-list :hover,
-.navbar-list :focus {
+.nav .list :hover,
+.nav .list :focus {
   color: var(--accent-color-hover);
 }
+
 /*logo*/
 
 .logo {
@@ -83,6 +86,9 @@ body {
   font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  
 }
 .logo-part {
   color: var(--accent-color);
@@ -90,6 +96,7 @@ body {
 .logo-second {
   color: var(--secodary-text-color);
 }
+
 /* address block*/
 
 .contact-mail {
@@ -97,6 +104,10 @@ body {
   color: var(--primery-text-color);
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  
+  
 }
 .contact-mail:hover {
   color: var(--accent-color-hover);
@@ -107,18 +118,26 @@ body {
   color: var(--primery-text-color);
   font-weight: 400;
   font-style: normal;
-}
+  margin-bottom: 24px;
+  margin-top: 24px;
+  
+ 
+  }
 
 .contact-tel:hover {
   color: var(--accent-color-hover);
 }
 
 /*features*/
+.features .list {
+  display: inline-block;
+}
 
 .list {
   color: var(--primery-text-color);
   font-weight: 400;
   font-size: 16px;
+  display: inline;
 }
 .features-title {
   color: var(--title-text-color);
@@ -127,6 +146,7 @@ body {
 }
 .features-text {
   width: 264px;
+  height: 72px;
 }
 
 /*competence*/
@@ -138,15 +158,38 @@ body {
   letter-spacing: 2px;
   text-align: center;
   width: 1440px;
-  letter-spacing: 0.02em;
+}
+/*work*/
+.work .list {
+  display: inline-block;
+  align-items: center;
 }
 
 /*team*/
 .team {
   background-color: var(--main-bcg-color);
-
   width: 1440px;
+  height: 732px;
 }
+.team-block {
+  background-color: var(--primary-bg-color);
+
+  width: 264px;
+  text-align: center;
+  display: inline-block;
+}
+.team-member {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  height: 24px;
+}
+.team-block p {
+  font-weight: 400;
+  font-size: 16px;
+  height: 24px;
+}
+
 .team-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -164,7 +207,6 @@ body {
 .footer {
   color: var(--secodary-text-color);
   background-color: #2e2f42;
-  margin-top: ;
   width: 1440px;
   height: 310px;
 }
@@ -176,7 +218,7 @@ body {
   list-style: none;
 }
 /* portfolio*/
-.type > .all {
+.type .all {
   border-color: var(--button-border-color);
   background-color: var(--button-main-color);
   color: var(--accent-color);
@@ -185,13 +227,13 @@ body {
   width: 69px;
   height: 48px;
 }
-.type > .all:hover {
+
+.type .all:hover {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
   border-radius: 4px;
   border-width: 1px;
-  color: rgba(0, 0, 0, 0.08);
 }
 
 .type > .website {
