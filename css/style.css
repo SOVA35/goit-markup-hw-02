@@ -15,14 +15,77 @@
 
 .list {
   list-style: none;
+  display: inline-block;
 }
+
 body {
   color: var(--primery-text-color);
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
   width: 1440px;
-  display: inline;
+  font-size: 16px;
+}
+.header {
+  width: 1440px;
+  background-color: var(--primary-bg-color);
+}
+
+/*logo*/
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.logo-part {
+  color: var(--accent-color);
+}
+.logo-second {
+  color: var(--secodary-text-color);
+}
+
+/*block nav*/
+
+.navbar-link {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+  color: var(--accent-color-hover);
+}
+
+/*logo*/
+
+/* address block*/
+
+.contacts-mail {
+  text-decoration: none;
+  color: var(--primery-text-color);
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.contacts-mail:hover {
+  color: var(--accent-color-hover);
+}
+
+.contacts-tel {
+  text-decoration: none;
+  color: var(--primery-text-color);
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  padding-left: 40px;
+  margin-right: 150px;
+}
+
+.contacts-tel:hover {
+  color: var(--accent-color-hover);
 }
 
 /*hero block*/
@@ -36,141 +99,84 @@ body {
   font-weight: 700;
   text-align: center;
   font-size: 56px;
- 
+  line-height: 1.1;
+  padding-top: 188px;
+  padding-bottom: 48px;
+  padding-left: 472px;
+  padding-right: 472px;
   margin: 0 auto;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02;
 }
 
-.button {
+.hero-btn {
   color: var(--secodary-text-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   border-radius: 4px;
   width: 169px;
   height: 56px;
-
-  
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 48px;
+  margin: 0 auto;
   display: block;
   border: none;
 }
 
-.button:hover {
+.hero-btn:hover {
   background-color: var(--accent-color-hover);
 }
-
-/*block nav*/
-.nav  {
-  display: inline-block;
-}
-
-.nav .link {
-  font-weight: 500;
-  text-decoration: none;
-  color: var(--title-text-color);
-  
-  
-}
-
-.nav .list :hover,
-.nav .list :focus {
-  color: var(--accent-color-hover);
-}
-
-/*logo*/
-
-.logo {
-  color: var(--title-text-color);
-  font-family: Raleway;
-  font-weight: 800;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-  margin-top: 24px;
-  
-}
-.logo-part {
-  color: var(--accent-color);
-}
-.logo-second {
-  color: var(--secodary-text-color);
-}
-
-/* address block*/
-
-.contact-mail {
-  text-decoration: none;
-  color: var(--primery-text-color);
-  font-weight: 400;
-  font-style: normal;
-  margin-bottom: 24px;
-  margin-top: 24px;
-  
-  
-}
-.contact-mail:hover {
-  color: var(--accent-color-hover);
-}
-
-.contact-tel {
-  text-decoration: none;
-  color: var(--primery-text-color);
-  font-weight: 400;
-  font-style: normal;
-  margin-bottom: 24px;
-  margin-top: 24px;
-  
- 
-  }
-
-.contact-tel:hover {
-  color: var(--accent-color-hover);
-}
-
 /*features*/
 .features .list {
   display: inline-block;
 }
 
-.list {
+.work-list {
   color: var(--primery-text-color);
   font-weight: 400;
   font-size: 16px;
   display: inline;
 }
-.features-title {
+.features-title,
+.team-member {
   color: var(--title-text-color);
   font-size: 20px;
   font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02;
 }
 .features-text {
   width: 264px;
   height: 72px;
+
+  line-height: 1.5;
+  text-align: left;
+  letter-spacing: 0.02;
 }
 
 /*competence*/
 
-.work-title {
+.work-title,
+.team-title {
   color: var(--title-text-color);
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 2px;
   text-align: center;
   width: 1440px;
+  line-height: 1.1;
+  letter-spacing: 0.02;
 }
 /*work*/
-.work .list {
-  display: inline-block;
-  align-items: center;
+.potfolio-list {
+  font-size: 20px;
 }
-
 /*team*/
-.team {
-  background-color: var(--main-bcg-color);
-  width: 1440px;
-  height: 732px;
-}
 .team-block {
   background-color: var(--primary-bg-color);
 
@@ -211,10 +217,27 @@ body {
   height: 310px;
 }
 
+.footer-text {
+  width: 264px;
+  line-height: 1.5;
+  text-align: left;
+  letter-spacing: 0.02;
+  width: 264px;
+  height: 72px;
+  margin-left: 156px;
+}
+.footer .logo {
+  margin-left: 156px;
+}
+
 /*<page portfolio>*/
 
 /*buttons*/
-.buttons-list > .type {
+
+.buttons-list {
+  display: flex;
+}
+.buttons-list .type {
   list-style: none;
 }
 /* portfolio*/
@@ -236,7 +259,7 @@ body {
   border-width: 1px;
 }
 
-.type > .website {
+.type .website {
   border-color: var(--button-border-color);
   background-color: var(--button-main-color);
   color: var(--accent-color);
@@ -245,7 +268,7 @@ body {
   width: 116px;
   height: 48px;
 }
-.type > .website:hover {
+.type .website:hover {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
@@ -253,7 +276,7 @@ body {
   border-width: 1px;
 }
 
-.type > .app {
+.type .app {
   border-color: var(--button-border-color);
   background-color: var(--button-main-color);
   color: var(--accent-color);
@@ -262,7 +285,7 @@ body {
   width: 78px;
   height: 48px;
 }
-.type > .app:hover {
+.type .app:hover {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
@@ -270,7 +293,7 @@ body {
   border-width: 1px;
 }
 
-.type > .design {
+.type .design {
   border-color: var(--button-border-color);
   background-color: var(--button-main-color);
   color: var(--accent-color);
@@ -279,7 +302,7 @@ body {
   width: 101px;
   height: 48px;
 }
-.type > .design:hover {
+.type .design:hover {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
@@ -287,7 +310,7 @@ body {
   border-width: 1px;
 }
 
-.type > .marketting {
+.type .marketting {
   border-color: var(--button-border-color);
   background-color: var(--button-main-color);
   color: var(--accent-color);
@@ -296,7 +319,7 @@ body {
   width: 126px;
   height: 48px;
 }
-.type > .marketting:hover {
+.type .marketting:hover {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
