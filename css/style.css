@@ -17,6 +17,12 @@
   list-style: none;
   display: inline-block;
 }
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -27,6 +33,8 @@ body {
   font-family: "Roboto", sans-serif;
   width: 1440px;
   font-size: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }
 .header {
   width: 1440px;
@@ -36,8 +44,12 @@ body {
 /*logo*/
 .logo {
   color: var(--title-text-color);
+
   font-family: Raleway;
   font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -65,30 +77,21 @@ body {
 
 /* address block*/
 
-.contacts-mail {
-  text-decoration: none;
-  color: var(--primery-text-color);
-  font-weight: 400;
-  font-style: normal;
-  margin-bottom: 24px;
-  margin-top: 24px;
-}
-.contacts-mail:hover {
-  color: var(--accent-color-hover);
-}
-
+.contacts-mail,
 .contacts-tel {
   text-decoration: none;
   color: var(--primery-text-color);
-  font-weight: 400;
-  font-style: normal;
-  margin-bottom: 24px;
-  margin-top: 24px;
-  padding-left: 40px;
-  margin-right: 150px;
-}
 
-.contacts-tel:hover {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contacts-mail:hover,
+.contacts-mail:focus {
+  color: var(--accent-color-hover);
+}
+.contacts-tel:hover,
+.contacts-tel:focus {
   color: var(--accent-color-hover);
 }
 
@@ -109,7 +112,7 @@ body {
   padding-left: 472px;
   padding-right: 472px;
   margin: 0 auto;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
 
 .hero-btn {
@@ -117,70 +120,58 @@ body {
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   border-radius: 4px;
   width: 169px;
   height: 56px;
+  letter-spacing: 0.04em;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-top: 48px;
   margin: 0 auto;
   display: block;
   border: none;
+  cursor: pointer;
 }
 
-.hero-btn:hover {
+.hero-btn:hover,
+.hero-btn:focus {
   background-color: var(--accent-color-hover);
 }
 /*features*/
+.features-title {
+}
 .features .list {
   display: inline-block;
-}
-
-.work-list {
-  color: var(--primery-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  display: inline;
-}
-.features-title,
-.team-member {
-  color: var(--title-text-color);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02;
 }
 .features-text {
   width: 264px;
   height: 72px;
-
   line-height: 1.5;
   text-align: left;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
 
 /*competence*/
 
-.work-title,
-.team-title {
+.work-title {
   color: var(--title-text-color);
+  width: 1440px;
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: 2px;
   text-align: center;
-  width: 1440px;
   line-height: 1.1;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
-/*work*/
-.potfolio-list {
-  font-size: 20px;
-}
+
 /*team*/
+.team-member {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
 .team-block {
   background-color: var(--primary-bg-color);
 
@@ -188,18 +179,6 @@ body {
   text-align: center;
   display: inline-block;
 }
-.team-member {
-  margin-top: 32px;
-  font-weight: 500;
-  font-size: 20px;
-  height: 24px;
-}
-.team-block p {
-  font-weight: 400;
-  font-size: 16px;
-  height: 24px;
-}
-
 .team-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -225,13 +204,10 @@ body {
   width: 264px;
   line-height: 1.5;
   text-align: left;
-  letter-spacing: 0.02;
-  width: 264px;
+  letter-spacing: 0.02em;
   height: 72px;
-  margin-left: 156px;
 }
 .footer .logo {
-  margin-left: 156px;
 }
 
 /*<page portfolio>*/
@@ -244,7 +220,9 @@ body {
 .buttons-list .type {
   list-style: none;
 }
-/* portfolio*/
+
+.type {
+}
 .type .all {
   border-color: var(--button-border-color);
   background-color: var(--button-main-color);
@@ -253,9 +231,11 @@ body {
   border-width: 1px;
   width: 69px;
   height: 48px;
+  cursor: pointer;
 }
 
-.type .all:hover {
+.type .all:hover,
+.type .all:focus {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
@@ -271,8 +251,10 @@ body {
   border-width: 1px;
   width: 116px;
   height: 48px;
+  cursor: pointer;
 }
-.type .website:hover {
+.type .website:hover,
+.type .website:focus {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
@@ -288,8 +270,10 @@ body {
   border-width: 1px;
   width: 78px;
   height: 48px;
+  cursor: pointer;
 }
-.type .app:hover {
+.type .app:hover,
+.type .app:focus {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
@@ -306,12 +290,14 @@ body {
   width: 101px;
   height: 48px;
 }
-.type .design:hover {
+.type .design:hover,
+.type .design:focus {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
   border-radius: 4px;
   border-width: 1px;
+  cursor: pointer;
 }
 
 .type .marketting {
@@ -322,11 +308,18 @@ body {
   border-width: 1px;
   width: 126px;
   height: 48px;
+  cursor: pointer;
 }
-.type .marketting:hover {
+.type .marketting:hover,
+.type .marketting:focus {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
   border-radius: 4px;
   border-width: 1px;
+}
+/* portfolio*/
+.portfolio-text {
+  line-height: 1.5;
+  text-align: left;
 }
