@@ -32,9 +32,8 @@ body {
   color: var(--primery-text-color);
   font-family: "Roboto", sans-serif;
   width: 1440px;
-  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  font-weight: 400;
 }
 .header {
   width: 1440px;
@@ -83,7 +82,6 @@ body {
   color: var(--primery-text-color);
 
   font-style: normal;
-  font-size: 16px;
   line-height: 1.5;
 }
 .contacts-mail:hover,
@@ -140,17 +138,14 @@ body {
   background-color: var(--accent-color-hover);
 }
 /*features*/
-.features-title {
-}
+
 .features .list {
   display: inline-block;
 }
 .features-text {
   width: 264px;
   height: 72px;
-  line-height: 1.5;
   text-align: left;
-  letter-spacing: 0.02em;
 }
 
 /*competence*/
@@ -166,30 +161,30 @@ body {
 }
 
 /*team*/
-.team-member {
-  color: var(--title-text-color);
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-.team-block {
-  background-color: var(--primary-bg-color);
-
-  width: 264px;
-  text-align: center;
-  display: inline-block;
-}
 .team-title {
   color: var(--title-text-color);
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: 2px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
   text-align: center;
   width: 1440px;
+}
+.team-block {
+  background-color: var(--primary-bg-color);
+  width: 264px;
+  text-align: center;
+  display: inline-block;
+}
+.team-member {
+  color: var(--title-text-color);
 }
 
 .team-image {
   background-color: var(--primary-bg-color);
+}
+.team-text {
+  font-size: 16px;
 }
 
 /*footer*/
@@ -202,12 +197,8 @@ body {
 
 .footer-text {
   width: 264px;
-  line-height: 1.5;
   text-align: left;
-  letter-spacing: 0.02em;
   height: 72px;
-}
-.footer .logo {
 }
 
 /*<page portfolio>*/
@@ -217,13 +208,8 @@ body {
 .buttons-list {
   display: flex;
 }
-.buttons-list .type {
-  list-style: none;
-}
 
-.type {
-}
-.type .all {
+.buttons-type .all {
   border-color: var(--button-border-color);
   background-color: var(--button-main-color);
   color: var(--accent-color);
@@ -231,11 +217,15 @@ body {
   border-width: 1px;
   width: 69px;
   height: 48px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
   cursor: pointer;
 }
 
-.type .all:hover,
-.type .all:focus {
+.buttons-type .all:hover,
+.buttons-type .all:focus {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
@@ -243,7 +233,7 @@ body {
   border-width: 1px;
 }
 
-.type .website {
+.buttons-type .website {
   border-color: var(--button-border-color);
   background-color: var(--button-main-color);
   color: var(--accent-color);
@@ -251,10 +241,14 @@ body {
   border-width: 1px;
   width: 116px;
   height: 48px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
   cursor: pointer;
 }
-.type .website:hover,
-.type .website:focus {
+.buttons-type .website:hover,
+.buttons-type .website:focus {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
@@ -262,7 +256,7 @@ body {
   border-width: 1px;
 }
 
-.type .app {
+.buttons-type .app {
   border-color: var(--button-border-color);
   background-color: var(--button-main-color);
   color: var(--accent-color);
@@ -270,10 +264,14 @@ body {
   border-width: 1px;
   width: 78px;
   height: 48px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
   cursor: pointer;
 }
-.type .app:hover,
-.type .app:focus {
+.buttons-type .app:hover,
+.buttons-type .app:focus {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
@@ -281,7 +279,7 @@ body {
   border-width: 1px;
 }
 
-.type .design {
+.buttons-type .design {
   border-color: var(--button-border-color);
   background-color: var(--button-main-color);
   color: var(--accent-color);
@@ -289,18 +287,20 @@ body {
   border-width: 1px;
   width: 101px;
   height: 48px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
-.type .design:hover,
-.type .design:focus {
+.buttons-type .design:hover,
+.buttons-type .design:focus {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
-  border-radius: 4px;
-  border-width: 1px;
-  cursor: pointer;
 }
 
-.type .marketting {
+.buttons-type .marketting {
   border-color: var(--button-border-color);
   background-color: var(--button-main-color);
   color: var(--accent-color);
@@ -308,18 +308,22 @@ body {
   border-width: 1px;
   width: 126px;
   height: 48px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
   cursor: pointer;
 }
-.type .marketting:hover,
-.type .marketting:focus {
+.buttons-type .marketting:hover,
+.buttons-type .marketting:focus {
   border-color: var(--button-border-color);
   background-color: var(--accent-color-hover);
   color: var(--secodary-text-color);
-  border-radius: 4px;
-  border-width: 1px;
 }
-/* portfolio*/
+
+/*portfolio*/
 .portfolio-text {
-  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
   text-align: left;
 }
