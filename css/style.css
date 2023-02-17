@@ -9,6 +9,19 @@
   --button-main-color: #f4f4fd;
   --button-border-color: #e7e9fc;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /*main text color:#434455*/
 /*accent color: #4D5AE5*/
@@ -40,7 +53,7 @@ body {
   background-color: var(--primary-bg-color);
 }
 
-/*logo*/
+/*-------------logo----------------*/
 .logo {
   color: var(--title-text-color);
 
@@ -59,9 +72,10 @@ body {
   color: var(--secodary-text-color);
 }
 
-/*block nav*/
+/*-------------block nav-----------*/
 
 .navbar-link {
+  font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   color: var(--title-text-color);
@@ -72,17 +86,16 @@ body {
   color: var(--accent-color-hover);
 }
 
-/*logo*/
+/*----------------logo--------------*/
 
-/* address block*/
+/*-----------address block----------*/
 
 .contacts-mail,
 .contacts-tel {
   text-decoration: none;
   color: var(--primery-text-color);
-
+  font-size: 16px;
   font-style: normal;
-  line-height: 1.5;
 }
 .contacts-mail:hover,
 .contacts-mail:focus {
@@ -93,7 +106,7 @@ body {
   color: var(--accent-color-hover);
 }
 
-/*hero block*/
+/*------------------hero block--------*/
 .hero {
   color: var(--secodary-text-color);
   background-color: #2e2f42;
@@ -117,10 +130,10 @@ body {
   color: var(--secodary-text-color);
   background-color: var(--accent-color);
   font-family: inherit;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   border-radius: 4px;
-  width: 169px;
   height: 56px;
   letter-spacing: 0.04em;
   padding-left: 32px;
@@ -137,7 +150,7 @@ body {
 .hero-btn:focus {
   background-color: var(--accent-color-hover);
 }
-/*features*/
+/*------------------features-------------*/
 
 .features .list {
   display: inline-block;
@@ -145,10 +158,11 @@ body {
 .features-text {
   width: 264px;
   height: 72px;
+  font-size: 16px;
   text-align: left;
 }
 
-/*competence*/
+/*------------------competence------------*/
 
 .work-title {
   color: var(--title-text-color);
@@ -160,7 +174,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/*team*/
+/*---------------------team---------------*/
 .team-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -187,7 +201,7 @@ body {
   font-size: 16px;
 }
 
-/*footer*/
+/*-------------------footer----------------*/
 .footer {
   color: var(--secodary-text-color);
   background-color: #2e2f42;
@@ -197,13 +211,14 @@ body {
 
 .footer-text {
   width: 264px;
+  font-size: 16px;
   text-align: left;
   height: 72px;
 }
 
-/*<page portfolio>*/
+/*-------------<page portfolio>------------*/
 
-/*buttons*/
+/*----------------buttons------------------*/
 
 .buttons-list {
   display: flex;
@@ -321,7 +336,7 @@ body {
   color: var(--secodary-text-color);
 }
 
-/*portfolio*/
+/*-------------portfolio----------------*/
 .portfolio-text {
   font-size: 16px;
   font-weight: 400;
